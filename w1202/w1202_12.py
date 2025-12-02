@@ -10,7 +10,7 @@ with open("daum_movie.html","r",encoding="utf8") as f:
     
 print(soup.prettify())
 
-#
+
 
 # selenium 으로 파일 저장-------------------------------------------------------------------------
 # import requests
