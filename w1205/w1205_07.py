@@ -44,9 +44,10 @@ ols = soup.find("ol",{"class":"list_place"})
 lis = ols.find_all("li")
 al = lis[0].find("em",{"class":"mark_count"}).text.strip().split() #al[1]
 name = lis[0].find("div",{"class":"cont_place"}).find("a").text.strip()
-price = lis[0].find("dl",{"class":"info_price"}).text.strip().split()
-pri = f""
-print(price)
+pri = lis[0].find("dl",{"class":"info_price"}).text.strip().split()
+pri_1 = f"{pri[0]}{pri[1]} : {pri[2]}{pri[3]} {pri[4]} {pri[5]}{pri[6]}"
+pri_2 =f"{pri[7]}{pri[8]} : {pri[9]} {pri[10]} {pri[11]}{pri[12]}"
+print(pri_1,pri_2)
 
 
 
